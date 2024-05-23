@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/*main layout styles */
+html{
+	font-family: Monaco;
+	font-size: 30px;
+}
+h2, p, h3{
+	text-align: center;
+}
+
+.lifetime {
+	text-align: left;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+#price {
+	font-weight: bold;
+	font-size: 40px;
+    transition: transform 0.3s ease;
+    transition: font-size 0.3s;
+}
+
+#price:hover {
+	font-size: 50px;
+	transform: translateX(30px);
+    
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+/*nav styles */
+nav li{
+	list-style: none;
+}
+nav {
+	margin: 0;
+	width: 100%;
+}
+nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	padding: 0;
+	background-color: #ED702D;
+	border-bottom: solid black 5px;
+
+}
+.title {
+	flex-grow: 0;
+}
+
+
+/*image and video styles */
+.logo {
+	height: 60px;
+}
+.claw{
+	height: 600px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.contImg{
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+}
+.video-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.video-container video {
+    max-width: 100%; 
+    margin-bottom: 25px;
+}
+
+/*footer styles */
+footer {
+	background-color: #404040;
+	color: #ED702D;
+	font-size: 15px;
+}
+#address{
+	font-size: 10px;
+}
+
+/*Shopping flex box styles */
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.flex-child{
+	flex: 1;
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+}
+.flex-child.info {
+	border-radius: 15px 15px 15px 175px;
+	border: solid #404040 20px;
+	background-color: #404040;
+	color: white;
+}
+.paypalContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+}
+#paypal-container-CSJRTLE8SSAKG {
+    width: 450px;   
+}
+#selector{
+	font-size: 23px;
+}
+
+
+/*media styles */
+@media only screen and (max-width: 1275px){
+	.flex-container{
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+	.flex-child{
+		flex-basis: 100%;
+		width: 100%;
+	}
+    .flex-child.contact .flex-container {
+        flex-direction: row; 
+        justify-content: space-around; 
+    }
+    footer .flex-container {
+        flex-direction: row; 
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .flex-child.info {
+    	border: none;
+    	border-radius: 0px 0px 0px 0px;
+    }
+    body{
+	background-color: white;
+	margin: 0px;
+	}
+	#multi {
+		margin-left: 0px;
+	} 
+	
+}
+@media only screen and (min-width: 1350px) and (max-width: 1450px) {
+    .flex-child.info {
+        border-radius: 15px 15px 15px 80px;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- Filet Claw. Created on 05/06/2024 by Bailey Vickery -->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>The Filet Claw</title>
+	<link rel="icon" href="logoNoBG.png" type="image/icon type">
+	<meta name=“viewport” content=“width=device-width, initial-scale=1” />
+	<link href = "filetClawStyles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class="title"><img class ="logo" src = "logoOrange.png" /></li>
+			</ul>
+		</nav>
+	</header>
+
+<div class = "flex-container">
+
+	<div class="flex-child payment">
+		<img class = "claw" src = "filetClawNoBG.png" />
+
+		<h3 id = "price">Only $14.99!</h3>
+
+	<div class = "paypalContainer">
+		<script src="https://www.paypal.com/sdk/js?client-id=BAAPzMJXfvCmguX2iKsSGY_NMQlP1rSysxJ-1v-Kr2HkV_zsHUK_2ZKd_5DmcWkZ80BjS1tsrz3vWLyY-M&components=hosted-buttons&enable-funding=venmo&currency=USD&disable-funding=paylater"></script>
+		<div id="paypal-container-CSJRTLE8SSAKG"></div>
+		<script>
+  			paypal.HostedButtons({
+    		hostedButtonId: "CSJRTLE8SSAKG",
+  			}).render("#paypal-container-CSJRTLE8SSAKG")
+		</script>
+	</div>
+
+	</div>
+
+	<div class = "flex-child info">
+		<h2>Filet Easy with The Filet Claw</h2>
+		<div class = "video-container">
+			<video autoplay loop muted controls>
+				<source src="filetVideoEdit.mp4" type="video/mp4">
+					Your browser doesn't support this video
+			</video>
+		</div>
+		<h3>Multi-Purpose Fish Fileting Tool</h3>
+		<table>
+			<tr>
+				<td>&#42; Holds Filet Effortlessly</td>
+			</tr>
+			<tr>
+				<td>&#42; Works on Fish Of All Sizes</td>
+			</tr>
+			<tr>
+				<td>&#42; 100% Stainless Steel</td>
+			</tr>
+			<tr>
+				<td>&#42; Made In The U.S.A</td>
+			</tr>
+
+		</table>
+		<br>
+		<h3>Lifetime Warranty!</h3>
+		<p>Shipping takes 5-7 business days.</p>
+		<p>Filet Claws not available in Canada.</p>
+	</div>
+
+</div>
+
+</body>
+<footer id = "contact">
+	<div class="flex-container">
+		<div id = "address" class = "flex-child address" >
+			<p>The Filet Claw</p>
+			<p>817 E Barrington Cir</p>
+			<p>Jackson, MI 49203</p>
+			<p>Created by Bailey Vickery</p>
+		</div>
+
+		<div class = "flex-child contact">
+			<h3>Follow us on Facebook and Twitter</h3>
+			<div class = "flex-container">
+				<div class = "flex-child facebook">
+					<img class = "contImg" src = "facebook.png" />
+				</div>
+				<div class = "flex-child twitter">
+					<img class = "contImg"  src = "twitter.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+</html>
